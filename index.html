@@ -503,6 +503,8 @@ section{padding:84px 0}
 .syn .eyebrow{color:var(--teal)}
 .syn .shead{margin-bottom:24px}
 .syn-intro{display:grid;grid-template-columns:1.5fr 1fr;gap:38px;align-items:stretch;margin-top:0}
+/* >1100: bleed the right edge +70px and size the box to match the .syn-detail panel below */
+@media(min-width:1100px){.syn-intro{width:calc(100% + 70px);grid-template-columns:1.94fr 1fr;gap:34px}}
 .syn-lead-col{display:flex;flex-direction:column;justify-content:space-between;gap:18px}
 .syn-zoom{margin:0;font-size:18px;color:var(--slate);line-height:1.62}
 .syn-lead{max-width:none;margin:0;font-size:16.5px;color:var(--slate);line-height:1.62}
